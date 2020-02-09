@@ -1,0 +1,10 @@
+img{
+    height: 100px;
+    width: 100px;
+    /* float: right; */
+    /* border-radius: 50%; */
+}
+
+.card{
+    background-color: rgb(76, 152, 215);
+}
