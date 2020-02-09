@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -7,15 +6,6 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import images from "./images.json"
 
-// function App() {
-//   return(
-//     <div className="App">
-//       <Header/>
-//       <Navbar/>
-//       <Card/>
-//     </div>
-//   )
-// }
 
 class App extends Component {
   state = {
@@ -28,19 +18,29 @@ class App extends Component {
 
   clickMe = id => {
     if (this.state.clicked.includes(id)) {
-      this.setState({ text: "Ehh, you pick the picture twice." })
+      this.setState({ text: "Ehh, you picked the picture twice." })
       if (this.state.highScore < this.state.score) {
         this.setState({ highScore: this.state.score })
       };
-      this.setState({ clicked: [] })
-      this.setState({ score: 0 })
+      this.setState({clicked: []})
+      this.setState({score: 0})
     }
     else {
-      this.setState({ text: "Here we go!" })
-      this.setState({ score: this.state.score + 1 })
-      this.setSteate({ click: [this.state.clicked, id] })
+      this.setState({text: "Here we go!" })
+      this.setState({score: this.state.score + 1 })
+      this.setState({clicked: [this.state.clicked, id] })
     }
+    const newClick = this.state.images
+    this.shuffleImages(newClick)
+  };
 
+  shuffleImages = newClick => {
+    for (var i = newClick.length -1; i>0; i--){
+      const j = Math.floor(Math.random() * (i+1))
+      const shuffle = newClick[i];
+      newClick[i] = newClick[j];
+      newClick[j] = shuffle
+    }
   }
 
   render() {
@@ -51,8 +51,9 @@ class App extends Component {
           score={this.state.score}
           highScore={this.state.highScore} />
         <div className="jumbotron text-center">
-          <h1>Bachelor Clicky Game</h1>
-          <p>Click on image for 1 point but be careful and don't click on one more than once!</p>
+          <Header/>
+          {/* <h1>Bachelor Clicky Game</h1> */}
+          {/* <p>Click on image for 1 point but be careful and don't click on one more than once!</p> */}
           <Wrapper>
             {this.state.images.map(image => (
               <Card
@@ -65,16 +66,8 @@ class App extends Component {
           </Wrapper>
         </div>
       </div>
-
-
-
-
     )
   }
-
-
-
-
 }
 
 export default App;
