@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "image": "https://www.mariowiki.com/images/5/5d/MK8DX_Mario_Stamp.png"
+    },
+    {
+        "id": 2,
+        "image": "https://www.mariowiki.com/images/0/0d/MK8DX_Luigi_Stamp.png"
+    },
+    {
+        "id": 3,
+        "image": "https://www.mariowiki.com/images/1/13/MK8DX_Yoshi_Stamp.png"
+    },
+    {
+        "id": 4,
+        "image": "https://www.mariowiki.com/images/5/5f/MK8DX_DK_Stamp.png"
+    },
+    {
+        "id": 5,
+        "image": "https://www.mariowiki.com/images/0/04/MK8DX_Link_Stamp.png"
+    },
+    {
+        "id": 6,
+        "image": "https://www.mariowiki.com/images/0/04/MK8DX_Peach_Stamp.png"
+    },
+    {
+        "id": 7,
+        "image": "https://www.mariowiki.com/images/4/46/MK8DX_Toad_Stamp.png"
+    },
+    {
+        "id": 8,
+        "image": "https://www.mariowiki.com/images/5/58/MK8DX_Toadette_Stamp.png"
+    },
+    {
+        "id": 9,
+        "image": "https://www.mariowiki.com/images/1/18/MK8DX_Wario_Stamp.png"
+    },
+    {
+        "id": 10,
+        "image": "https://www.mariowiki.com/images/1/1c/MK8DX_Waluigi_Stamp.png"
+    },
+    {
+        "id": 11,
+        "image": "https://www.mariowiki.com/images/7/75/MK8DX_Isabelle_Stamp.png"
+    },
+    {
+        "id": 12,
+        "image": "https://www.mariowiki.com/images/b/b2/MK8DX_Bowser_Stamp.png"
+    },
+    {
+        "id": 13,
+        "image": "https://www.mariowiki.com/images/1/1d/MK8DX_Shy_Guy_Stamp.png"
+    }
+    
+]
