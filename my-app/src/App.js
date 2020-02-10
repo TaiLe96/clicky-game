@@ -30,6 +30,8 @@ class App extends Component {
       this.setState({score: this.state.score + 1 })
       this.setState({clicked: [this.state.clicked, id] })
     }
+
+    
     const newClick = this.state.images
     this.shuffleImages(newClick)
   };
