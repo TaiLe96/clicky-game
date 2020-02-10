@@ -52,8 +52,6 @@ class App extends Component {
           highScore={this.state.highScore} />
         <div className="jumbotron text-center">
           <Header/>
-          {/* <h1>Bachelor Clicky Game</h1> */}
-          {/* <p>Click on image for 1 point but be careful and don't click on one more than once!</p> */}
           <Wrapper>
             {this.state.images.map(image => (
               <Card
