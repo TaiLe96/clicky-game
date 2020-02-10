@@ -1,7 +1,7 @@
 # clicky-game
 
 # Summaries
-    This application was created with React. The game will render a set of images where users is trying to pick an image once. The score will increase by 1 every time users pick an image, but the score will reset if the users pick the image twice. So let's test your memomry.
+  This application was created with React. The game will render a set of images where users is trying to pick an image once. The score will increase by 1 every time users pick an image, but the score will reset if the users pick the image twice. So let's test your memomry.
 
 # Deploy Link
  https://taile96.github.io/clicky-game/
